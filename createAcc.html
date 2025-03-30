@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+>
+<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <h1>Create a Banking Account</h1>
+    <h2>Personal Details</h2>
+<form id="create-account">
+    <div id="Account-create-form">
+        <label for="name">Name</label>
+        <input class="input is-rounded fill-box" type="text" id="name" placeholder="Input Name" />
+    </div>
+    <div id="Account-create-form">
+        <label for="age">Age</label>
+        <input class="input is-rounded fill-box" type="number" placeholder="Input Age" />
+    </div>
+    <div id="Account-create-form">
+        <label for="addhar">Addhar id</label>
+        <input class="input is-rounded fill-box" type="number" placeholder="Addhar Number" />
+    </div>
+    <div id="Account-create-form">
+        <label for="Pan">PAN Number</label>
+        <input class="input is-rounded fill-box" type="text" placeholder="PAN Number" />
+    </div>
+    <div id="Account-create-form">
+        <label for="address">Address</label>
+        <input class="input is-rounded fill-box" type="text" placeholder="address" />
+    </div>
+    <div id="Account-create-form">
+        <label for="pin-code">PIN code</label>
+        <input class="input is-rounded fill-box" type="number" placeholder="PIN code" />
+    </div>
+    <div id="Account-create-form">
+        <label for="email">Email id</label>
+        <input class="input is-rounded fill-box" type="email" placeholder="abcd@email.com" />
+    </div>
+    <div id="Account-create-form">
+        <label for="contact">Phone Number(+91)</label>
+        <input class="input is-rounded fill-box" type="number" placeholder="Phone Number" />
+    </div>
+    <button class="button is-success" id="submitbtn" type="submit" onclick="stopRefresh(event)">Submit</button>
+</form>
+<div id="ac-details">
+    <h3 id="accheading"></h3>
+        <p id="accno"></p>
+        <p id="ifsc"></p>
+        <p id="securitypin"></p>
+</div>
+<div id="deposite-form">
+    <div id="Account-create-form">
+        <label for="name">Name</label>
+        <input class="input is-rounded fill-box" type="text" placeholder="Input name" />
+    </div>
+    <div id="Account-create-form">
+        <label for="deposite">Account Number</label>
+        <input class="input is-rounded fill-box" type="text" placeholder="Input Account Number" />
+    </div>
+    <div id="Account-create-form">
+        <label for="amount">Amount</label>
+        <input class="input is-rounded fill-box" type="text" placeholder="Input Amount to deposite" />
+    </div>
+    <button class="button is-success" id="deposite-submitbtn" type="submit" onclick="stopRefresh(event)">Submit</button>
+</div>
+<script src="bank.js"></script>
+</body>
+</html>
